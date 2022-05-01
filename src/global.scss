@@ -1,0 +1,14 @@
+$topbar-bgColor:#11052C;
+$main-bgColor:white;
+$secondary-bgColor:#C6E5F3;
+$main-fontColor:black;
+$secondary-fontColor:black;
+$menus-fontHoverColor:rgb(148, 193, 232);
+
+
+@mixin flex-center($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}

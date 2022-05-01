@@ -1,0 +1,85 @@
+@import "../../global.scss";
+ a{
+   text-decoration: none;
+   color: inherit;
+  }
+.topbar{
+    @include flex-center(row);
+    background-color: $topbar-bgColor;
+    color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+    padding: 0px 5rem;
+   
+
+
+    .wrapper{
+        @include flex-center(row);
+        justify-content:space-between;
+        width: 100%;
+        
+
+        .left{
+            .logo{
+                @include flex-center(row);
+                font-size: 2rem;
+                font-weight: 600;
+               a{
+                   &:hover{
+                    color: $menus-fontHoverColor;
+                   }
+               }
+            }
+        }
+
+        .right{
+            
+            .menus{
+
+            ul{
+            @include flex-center(row);
+            text-decoration: none;
+
+            li{
+                @include flex-center(row);
+                width: 100px;
+                font-size: 0.9rem;
+                font-weight: 300;
+                
+               a{
+                    &:hover{
+                    font-weight: 500;
+                    color: $menus-fontHoverColor;
+                }
+
+               
+               }
+            }
+            }
+
+            }
+        }
+        
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .topbar{
+        .wrapper{
+            // .left{
+            
+            // }
+
+            .right{
+               
+                .menus{
+                     display: none;
+                }
+            }
+        }
+    }
+}
