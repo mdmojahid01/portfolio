@@ -1,14 +1,20 @@
-$topbar-bgColor:#11052C;
-$main-bgColor:white;
-$secondary-bgColor:#C6E5F3;
-$main-fontColor:black;
-$secondary-fontColor:black;
-$menus-fontHoverColor:rgb(148, 193, 232);
-
+$topbar-bgColor: #fcd900;
+$topbar-fontColor: black;
+$main-bgColor: white;
+$secondary-bgColor: black;
+$main-fontColor: black;
+$secondary-fontColor: black;
+$menus-fontHoverColor: rgb(0, 132, 255);
 
 @mixin flex-center($flex-direction) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 500;
+  padding: 10px 0px;
 }

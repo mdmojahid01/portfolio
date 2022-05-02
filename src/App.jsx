@@ -7,6 +7,7 @@ import Experience from "./components/experience/experience";
 import Project from "./components/projects/projects";
 import Resume from "./components/resume/resume";
 import Contact from "./components/contact/contact";
+import "./global.scss";
 
 function App() {
   // ---------------- jsx -------------------------
