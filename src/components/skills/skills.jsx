@@ -2,12 +2,14 @@ import React from "react";
 import "./skills.scss";
 import InnerSkillDiv from "./innerSkillDiv";
 import { TiHtml5, TiCss3 } from "react-icons/ti";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiMongodb, SiRedux } from "react-icons/si";
+import { FaReact, FaGithub } from "react-icons/fa";
+import { IoLogoNodejs, IoLogoPython } from "react-icons/io";
 
 function skills() {
   return (
     <div className="skills" id="skills">
-      <h1>Skills</h1>
+      <h1>Technical Skills</h1>
       <div className="skill-div">
         <InnerSkillDiv
           icon={<TiHtml5 style={{ color: "orangered" }} />}
@@ -21,12 +23,30 @@ function skills() {
           icon={<SiJavascript style={{ color: "yellow" }} />}
           name="JavaScript"
         />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
-        <InnerSkillDiv icon={<TiHtml5 />} name="HTML5" />
+        <InnerSkillDiv
+          icon={<IoLogoPython style={{ color: "darkblue" }} />}
+          name="Python"
+        />
+        <InnerSkillDiv
+          icon={<FaGithub style={{ color: "black" }} />}
+          name="Github"
+        />
+        <InnerSkillDiv
+          icon={<SiMongodb style={{ color: "lightgreen" }} />}
+          name="MongoDB"
+        />{" "}
+        <InnerSkillDiv
+          icon={<FaReact style={{ color: "skyblue" }} />}
+          name="React JS"
+        />
+        <InnerSkillDiv
+          icon={<SiRedux style={{ color: "skyblue" }} />}
+          name="Redux"
+        />
+        <InnerSkillDiv
+          icon={<IoLogoNodejs style={{ color: "green" }} />}
+          name="Node JS"
+        />
       </div>
     </div>
   );

@@ -3,15 +3,21 @@
 .intro {
   background-color: $main-bgColor;
   @include flex-center(row);
+  padding: 30px 0px 0px;
   flex-wrap: wrap;
   word-wrap: normal;
+  * {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 
   .left {
     @include flex-center(column);
     justify-content: flex-start;
     width: 40%;
     height: 100%;
-    padding: 30px 0px 0px;
+    // padding: 30px 0px 0px;
     color: black;
     // position: relative;
 
@@ -68,7 +74,7 @@
     @include flex-center(column);
     width: 60%;
     height: 100%;
-    padding: 50px 0px 10px;
+    // padding: 50px 0px 0px;
     justify-content: flex-start;
     align-items: flex-start;
     color: black;

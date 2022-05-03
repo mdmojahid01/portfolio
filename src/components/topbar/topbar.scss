@@ -1,8 +1,4 @@
 @import "../../global.scss";
-a {
-  text-decoration: none;
-  color: inherit;
-}
 .topbar {
   @include flex-center(row);
   background-color: $topbar-bgColor;

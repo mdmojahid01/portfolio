@@ -1,25 +1,21 @@
 @import "./global.scss";
 
 .app {
-  height: 100vh;
+  min-height: 100vh;
+  // max-height: fit-content;
 
   .sections {
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: lightblue;
+    // height: fit-content;
+    background-color: white;
     position: relative;
     top: 70px;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
     > * {
       width: 100vw;
       height: calc(100vh - 70px);
-      scroll-behavior: smooth;
-      // scroll-snap-align: start;
+      // height: fit-content;
     }
   }
 }

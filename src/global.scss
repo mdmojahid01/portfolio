@@ -1,4 +1,4 @@
-$topbar-bgColor: #fcd900;
+$topbar-bgColor: rgb(228, 87, 111);
 $topbar-fontColor: black;
 $main-bgColor: white;
 $secondary-bgColor: black;
@@ -12,9 +12,31 @@ $menus-fontHoverColor: rgb(0, 132, 255);
   justify-content: center;
   align-items: center;
 }
+* {
+  // scroll-snap-type: y mandatory;
+  // scroll-snap-align: start;
 
+  &::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    width: 14px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: $topbar-bgColor;
+  }
+  // ::-webkit-scrollbar-thumb:hover {
+  //   background: rgb(154, 154, 35);
+  // }
+}
 h1 {
   font-size: 1.75em;
   font-weight: 500;
   padding: 10px 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }

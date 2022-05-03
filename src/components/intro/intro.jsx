@@ -80,8 +80,8 @@ function intro() {
             currently, I'm studying in Computer Science Engineering at Rayat
             Institute of Engineering and Information Technology. I'm 6
             <sup>th</sup> semester student. I'm from Bihar and I have done my 10
-            <sup>th</sup> and 10+2<sup>th</sup> from Bihar Board School
-            Examination (BSEB),Patna.
+            <sup>th</sup> and 10+2<sup>th</sup> from Bihar School Examination
+            Board (BSEB),Patna.
             <br />
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
