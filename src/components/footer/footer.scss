@@ -1,0 +1,43 @@
+@import "../../global.scss";
+.footer {
+  height: 60px !important;
+  width: 100%;
+  background-color: $footer-bgColor;
+  color: $footer-fontColor;
+  padding: 0.5rem 4rem;
+  @include flex-center(row);
+
+  .left {
+    width: 40%;
+    svg {
+      color: lightblue;
+      margin: 0px 8px;
+    }
+  }
+
+  .right {
+    @include flex-center(row);
+    width: 60%;
+    column-gap: 30px;
+    justify-content: flex-end;
+
+    .number,
+    .email {
+      @include flex-center(row);
+      svg {
+        font-size: 25px;
+        margin: 2px 10px;
+      }
+    }
+    .number {
+      svg {
+        color: #04aa6d;
+      }
+    }
+    .email {
+      svg {
+        color: blueviolet;
+      }
+    }
+  }
+}

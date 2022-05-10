@@ -2,8 +2,13 @@ import React from "react";
 import "./topbar.scss";
 
 function topbar() {
+  document.addEventListener("scroll", function () {
+    const sticky = document.getElementById("sticky");
+    sticky.classList.toggle("sticky", window.scrollY > 10);
+  });
+  // --------------------JSX------------------------------------------
   return (
-    <div className="topbar">
+    <div className="topbar" id="sticky">
       <div className="wrapper">
         <div className="left">
           <div className="logo">

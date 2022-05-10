@@ -1,15 +1,27 @@
 @import "../../global.scss";
+
+.sticky {
+  height: 70px !important;
+  background-color: $secondary-bgColor !important;
+  color: $secondary-fontColor !important;
+  box-shadow: 5px 0px 15px lightgrey;
+}
 .topbar {
   @include flex-center(row);
-  background-color: $topbar-bgColor;
-  color: $topbar-fontColor;
+  color: $main-fontColor;
   width: 100%;
-  height: 70px;
+  height: 100px;
   position: fixed;
-  top: 0%;
-  z-index: 3;
-  padding: 0px 5rem;
-  box-shadow: 5px 0px 15px lightgrey;
+  top: 0;
+  left: 0;
+  z-index: 123;
+  padding: 1rem 5rem;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+
+  > * {
+    position: relative;
+  }
 
   .wrapper {
     @include flex-center(row);

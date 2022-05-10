@@ -1,10 +1,26 @@
-$topbar-bgColor: rgb(228, 87, 111);
-$topbar-fontColor: black;
+// ------ TopBar Color ------------------
+$menus-fontHoverColor: rgb(0, 132, 255);
+
+// ----------- Main theme Colors ------------
 $main-bgColor: white;
 $secondary-bgColor: black;
 $main-fontColor: black;
-$secondary-fontColor: black;
-$menus-fontHoverColor: rgb(0, 132, 255);
+$secondary-fontColor: white;
+
+// ----------- Skills Section Colors ------------
+$skill-bgColor: lightblue;
+$skill-fontColor: black;
+
+// ------ Contact Section Colors -----------------
+$contact-bgColor: white;
+$contact-fontColor: #191924;
+$contact-bdrColor: #6c63ff;
+$contact-bdrHoverColor: #191924;
+
+// -------- Footer Section Colors ---------------------
+$footer-bgColor: #191924;
+$footer-fontColor: white;
+// -------------------------------------------------------------------
 
 @mixin flex-center($flex-direction) {
   display: flex;
@@ -25,7 +41,7 @@ $menus-fontHoverColor: rgb(0, 132, 255);
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    background: $topbar-bgColor;
+    background: $secondary-bgColor;
   }
   // ::-webkit-scrollbar-thumb:hover {
   //   background: rgb(154, 154, 35);
