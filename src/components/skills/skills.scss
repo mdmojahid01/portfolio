@@ -1,14 +1,11 @@
 @import "../../global.scss";
 .skills {
   @include flex-center(column);
-  background-color: $skill-bgColor;
   color: $skill-fontColor;
-  height: 80vh;
-  padding-top: 70px;
   width: 100%;
+  height: 100vh;
+  padding-top: 70px;
 
-  // position: relative;
-  // top: 70px;
   > h1 {
     width: 100%;
     height: 20%;
@@ -17,24 +14,52 @@
   }
   .skill-div {
     @include flex-center(row);
-    column-gap: 50px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 90%;
     height: 80%;
-    margin-top: 20px;
-    padding: 25px;
-    border-radius: 50px;
+    width: 100%;
+
+    .left {
+      @include flex-center(row);
+      width: 50%;
+      height: 100%;
+      // border: 1px solid black;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+    .right {
+      @include flex-center(row);
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 50px;
+      width: 50%;
+      height: 100%;
+      padding: 80px 20px;
+      // border: 1px solid black;
+    }
   }
 }
 
 // ------------------- InnerSkillDiv Styles ---------------
 .inner-skill-div {
   @include flex-center(column);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px gray;
 
+  &:hover {
+    box-shadow: 0px 4px 8px gray;
+    transition: all 0.2s ease-out;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
   svg {
     font-size: 30px;
   }
+  border: 0.8px solid lightgray;
 }
