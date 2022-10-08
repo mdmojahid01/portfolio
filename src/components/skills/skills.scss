@@ -30,9 +30,8 @@
     }
     .right {
       @include flex-center(row);
-      justify-content: space-around;
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 20px;
       width: 50%;
       height: 100%;
       padding: 80px 20px;
@@ -43,9 +42,11 @@
 
 // ------------------- InnerSkillDiv Styles ---------------
 .inner-skill-div {
-  @include flex-center(column);
-  width: 80px;
+  @include flex-center(row);
+  width: 160px;
   height: 80px;
+  gap: 20px;
+  padding: 5px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 2px 4px gray;
@@ -56,10 +57,10 @@
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   svg {
-    font-size: 30px;
+    font-size: 36px;
   }
   border: 0.8px solid lightgray;
 }

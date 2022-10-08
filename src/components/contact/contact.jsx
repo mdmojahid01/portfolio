@@ -1,11 +1,11 @@
 import React from "react";
-
 import "./contact.scss";
 
 function contact() {
+  // -------------------------------------------
   return (
     <div className="contact" id="contact">
-      <h1>Contact</h1>
+      <h1>Contact me</h1>
       <div className="inner-contact">
         <div className="left">
           <img
@@ -14,7 +14,13 @@ function contact() {
           />
         </div>
         <div className="right">
-          <div className="inputAddressContainer">
+          <form
+            action="https://formspree.io/f/xnqrzagk"
+            method="post"
+            target="_blank"
+            className="inputAddressContainer"
+          >
+            {/* <div className="inputAddressContainer"> */}
             {/* ------------------- */}
             <div className="inpContainer">
               <input
@@ -59,7 +65,8 @@ function contact() {
             <div className="btnCon">
               <button>Send Message</button>
             </div>
-          </div>
+            {/* </div> */}
+          </form>
         </div>
       </div>
     </div>

@@ -60,6 +60,23 @@
               }
             }
           }
+          .resume-btn {
+            border-radius: 8px;
+            padding: 5px 10px;
+            background-color: $menus-fontHoverColor;
+
+            &:hover {
+              background-color: #3f3d56;
+            }
+            a {
+              @include flex-center(row);
+              gap: 5px;
+              color: white;
+            }
+            a:hover {
+              color: white;
+            }
+          }
         }
       }
     }

@@ -11,7 +11,7 @@ import Footer from "./components/footer/footer";
 
 function App() {
   // ---------------- jsx -------------------------
-  return (
+  return ( 
     <div className="app">
       <Intro />
       <Skills />

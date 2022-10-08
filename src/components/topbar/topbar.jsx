@@ -1,5 +1,7 @@
 import React from "react";
 import "./topbar.scss";
+import resume from "../../images/resume/mojahid_cv.pdf";
+import { HiOutlineDownload } from "react-icons/hi";
 
 function topbar() {
   document.addEventListener("scroll", function () {
@@ -33,7 +35,13 @@ function topbar() {
               <li>
                 <a href="#contact">Contact me</a>
               </li>
-              {/* adding later download iconfor  my resume */}
+              {/* adding download iconfor  my resume */}
+              <li className="resume-btn">
+                <a href={resume} download="mojahid_cv.pdf">
+                  <span> Resume</span>
+                  <HiOutlineDownload style={{ fontSize: "16px" }} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
