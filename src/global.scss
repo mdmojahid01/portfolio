@@ -3,22 +3,22 @@ $menus-fontHoverColor: #6c63ff;
 
 // ----------- Main theme Colors ------------
 $main-bgColor: white;
-$secondary-bgColor: black;
+$secondary-bgColor: #2d2b3e;
 $main-fontColor: black;
 $secondary-fontColor: white;
 
 // ----------- Skills Section Colors ------------
-$skill-bgColor: lightblue;
-$skill-fontColor: black;
+//$skill-bgColor: lightblue;
+//$skill-fontColor: #2d2b3e;
 
 // ------ Contact Section Colors -----------------
 $contact-bgColor: white;
-$contact-fontColor: #191924;
+$contact-fontColor: #2d2b3e;
 $contact-bdrColor: #6c63ff;
 $contact-bdrHoverColor: #191924;
 
 // -------- Footer Section Colors ---------------------
-$footer-bgColor: #191924;
+$footer-bgColor: #2d2b3e;
 $footer-fontColor: white;
 // -------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ $footer-fontColor: white;
     width: 14px;
   }
   &::-webkit-scrollbar-thumb {
-    border-radius: 15px;
+    // border-radius: 15px;
     background: $secondary-bgColor;
   }
   // ::-webkit-scrollbar-thumb:hover {

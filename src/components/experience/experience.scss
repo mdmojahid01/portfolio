@@ -6,11 +6,12 @@
   padding: 70px 0px 50px;
   @include flex-center(column);
 
-  h1 {
+  > h1 {
     width: 100%;
     font-size: 3.75rem;
     text-align: center;
     height: 20%;
+    color: $secondary-bgColor;
   }
 
   .experience-div {
@@ -31,7 +32,7 @@
       width: 40%;
       height: 100%;
       @include flex-center(row);
-      // padding-top: 100px;
+      padding: 50px;
 
       img {
         width: 80%;
@@ -45,15 +46,15 @@
     min-height: 280px;
     padding: 25px;
     border-radius: 8px;
-    background-color: #3f3d56;
+    background-color: $secondary-bgColor;
     color: #e0defd;
-    box-shadow: 0px 0px 4px #3f3d56;
+    box-shadow: 0px 0px 4px $secondary-bgColor;
     transition: all 0.2s ease-out;
     @include flex-center(row);
     gap: 30px;
 
     &:hover {
-      box-shadow: 0px 0px 16px #3f3d56;
+      box-shadow: 0px 0px 16px $secondary-bgColor;
     }
     .companyLogodiv {
       width: 30%;

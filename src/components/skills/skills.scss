@@ -1,10 +1,11 @@
 @import "../../global.scss";
 .skills {
   @include flex-center(column);
-  color: $skill-fontColor;
+  color: $secondary-bgColor;
   width: 100%;
   height: 100vh;
   padding-top: 70px;
+  box-shadow: 0 0px 10px #e0e0e0;
 
   > h1 {
     width: 100%;
@@ -33,7 +34,7 @@
       flex-wrap: wrap;
       gap: 20px;
       width: 50%;
-      height: 100%;
+      // height: 100%;
       padding: 80px 20px;
       // border: 1px solid black;
     }
@@ -49,10 +50,11 @@
   padding: 5px;
   background-color: white;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px gray;
+  box-shadow: 0px 0px 4px #cecece;
 
   &:hover {
-    box-shadow: 0px 4px 8px gray;
+    box-shadow: 0px 0px 12px #cacaca;
+
     transition: all 0.2s ease-out;
   }
 

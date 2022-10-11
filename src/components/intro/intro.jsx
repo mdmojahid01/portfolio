@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import Topbar from "../topbar/topbar";
 import "./intro.scss";
 import { HiOutlineMail } from "react-icons/hi";
@@ -72,24 +73,34 @@ function intro() {
         </div>
         <div className="right">
           <div className="introduction">
-            <h1>Introduction</h1>
+            <h1>
+              Hi, I'm Mohammad Mojahid.<span className="wave">👋</span>
+            </h1>
+            <br />
+            <div>
+              And I am
+              <Typewriter
+                options={{
+                  strings: [
+                    "Frontend Enthusiast.",
+                    "React Developer.",
+                    "JavaScript Developer.",
+                    "Team Person.",
+                    "Dedicated Programmer.",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             <p>
-              Hi, My name is Mohammad Mojahid.
-              <br />
-              Currently, I'm studying in Computer Science Engineering at Rayat
-              Institute of Engineering and Information Technology. I'm 7
-              <sup>th</sup> semester student. I'm from Bihar and I have done my
-              10
-              <sup>th</sup> and 10+2<sup>th</sup> from Bihar School Examination
-              Board,Patna.
-              <br />
-              <br />I have a great interest in Software Development. Currently,
-              I am working to enhance my Web Development Skills ( like HTML5,
-              CSS3, bootstrap4, JavaScript and React Js ). In future, I would
-              like to work in MERN Stack Technology. Now, I am looking forward
-              to Placements. I want to work for an organization where I can
-              enhance my technical knowledge and get experience by achieving the
-              organization goal.
+              {" "}
+              I have a great interest in Software Development🚀. Currently, I am
+              working to enhance my Web Development Skills ( like HTML5, CSS3,
+              bootstrap4, JavaScript and React Js ). In future, I would like to
+              work in MERN Stack Technology. I want to work for an organization
+              where I can enhance my technical knowledge and get experience by
+              achieving the organization goal.
             </p>
           </div>
           <div className="education">
@@ -98,7 +109,7 @@ function intro() {
               <div className="edu-div">
                 <IoSchoolSharp />
                 <div className="edu-name">
-                  <h3>B.tech 2019-present</h3>
+                  <h3>B.tech (CSE) 2019-present</h3>
                   <p>
                     RAYAT INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY,
                     PUNJAB

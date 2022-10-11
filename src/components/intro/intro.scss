@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .first-div {
+  width: 100%;
   height: 100vh;
 }
 
@@ -99,12 +100,62 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding: 15px;
+      height: 50%;
+      width: 100%;
+      h1 {
+        font-size: 50px;
+        font-weight: bolder;
 
+        .wave {
+          animation-name: wave-animation;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 70% 70%;
+          display: inline-block;
+        }
+
+        @keyframes wave-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          }
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      > div {
+        font-size: 32px;
+        color: #6c63ff;
+        display: flex;
+        gap: 10px;
+        font-weight: 500;
+      }
       p {
-        font-size: 1em;
+        line-height: 1.4em;
+        font-size: 1.2em;
         padding: 10px 0px;
-        font-weight: 400;
-        font-family: system-ui, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        color: darkslategray;
+        font-family: cursive;
+        overflow: hidden;
       }
     }
 
@@ -114,6 +165,8 @@
       align-items: flex-start;
       padding: 15px;
       margin-top: 20px;
+      height: 50%;
+      width: 100%;
 
       .edu-content {
         .edu-div {

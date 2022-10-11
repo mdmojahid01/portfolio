@@ -18,12 +18,15 @@
   .right {
     @include flex-center(row);
     width: 60%;
-    column-gap: 30px;
+    column-gap: 5px;
     justify-content: flex-end;
 
     .number,
     .email {
       @include flex-center(row);
+      a {
+        @include flex-center(row);
+      }
       svg {
         font-size: 25px;
         margin: 2px 10px;

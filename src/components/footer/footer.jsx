@@ -21,14 +21,17 @@ function footer() {
       </div>
       <div className="right">
         <div className="number">
-          <BsWhatsapp />
-          <a href="https://wa.me/7903109130" title="WhatsApp Number">
-            +91 7903109130
+          <a
+            target="blank"
+            href="https://wa.me/7903109130"
+            title="WhatsApp Number"
+          >
+            <BsWhatsapp />
           </a>
         </div>
         <div className="email">
-          <HiOutlineMail />
           <a href="mailto:mojahidmd92@gmail.com" title="Email">
+            <HiOutlineMail />
             mojahidmd92@gmail.com
           </a>
         </div>
