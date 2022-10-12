@@ -19,16 +19,15 @@
   transition: 0.5s;
   scroll-behavior: smooth;
 
-  > * {
-    position: relative;
-  }
-
   .wrapper {
     @include flex-center(row);
     justify-content: space-between;
     width: 100%;
 
     .left {
+      .toggleBtn {
+        display: none;
+      }
       .logo {
         @include flex-center(row);
         font-size: 2rem;
@@ -82,17 +81,115 @@
     }
   }
 }
-
-@media screen and (max-width: 1050px) {
+// =========== Media Query Adding below ===============
+@media screen and (min-width: 1025px) and (max-width: 1125px) {
+  .logo {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1025px) {
+  .logo {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
   .topbar {
+    padding: 1rem 2rem;
+  }
+  .logo {
+    a {
+      font-size: 6vw;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .active-topbar {
+    height: fit-content;
+    background-color: #f8f9fa;
+  }
+  .active-right {
+    display: block !important;
+    height: 286px !important;
+  }
+  .sticky {
     .wrapper {
-      // .left{
+      .active-right {
+        display: none !important;
+      }
+    }
+  }
+  //  -----------------------------
+  .topbar {
+    background-color: $secondary-bgColor !important;
+    color: $secondary-fontColor !important;
+    box-shadow: 5px 0px 15px lightgrey;
+    transition: all 0.5s;
+    overflow-y: hidden;
 
-      // }
+    .wrapper {
+      @include flex-center(column);
+      gap: 10px;
 
+      .left {
+        @include flex-center(row);
+        width: 100%;
+        height: calc(100px - 2rem);
+        justify-content: space-between;
+
+        .logo {
+          a {
+            &:hover {
+            }
+          }
+        }
+        .toggleBtn {
+          width: 55px;
+          height: 38px;
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          border: 1px solid white;
+          padding: 4px 15px;
+          border-radius: 4px;
+          margin: 4px;
+          &:hover {
+            box-shadow: 0px 0px 4px white;
+          }
+        }
+      }
       .right {
+        width: 100%;
+        display: none;
+
         .menus {
-          display: none;
+          ul {
+            @include flex-center(column);
+            gap: 10px;
+            padding: 0px !important;
+            li {
+              width: 130px;
+              a {
+                padding: 10px;
+                &:hover {
+                }
+              }
+            }
+            .resume-btn {
+              &:hover {
+              }
+              a {
+              }
+              a:hover {
+              }
+            }
+          }
         }
       }
     }

@@ -1,23 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./topbar.scss";
 import resume from "../../images/resume/mojahid_cv.pdf";
 import { HiOutlineDownload } from "react-icons/hi";
+import { AiOutlineAlignRight } from "react-icons/ai";
+import { ImCross } from "react-icons/im";
+import { act } from "@testing-library/react";
 
-function topbar() {
+function Topbar() {
+  const [activeToggle, setActiveToggle] = useState(false);
   document.addEventListener("scroll", function () {
     const sticky = document.getElementById("sticky");
     sticky.classList.toggle("sticky", window.scrollY > 10);
+    if (sticky.classList[2] === "sticky") {
+      setActiveToggle(!activeToggle);
+    }
   });
+
+  const togglebtn = () => {
+    setActiveToggle(!activeToggle);
+  };
   // --------------------JSX------------------------------------------
   return (
-    <div className="topbar" id="sticky">
+    <div
+      className={`topbar ${activeToggle ? `active-topbar` : ``}`}
+      id="sticky"
+    >
       <div className="wrapper">
         <div className="left">
           <div className="logo">
             <a href="#intro">Mohammad Mojahid</a>
           </div>
+          {/* --------- Toggle btn ---------- */}
+          <div className="toggleBtn" onClick={togglebtn}>
+            {activeToggle ? <ImCross /> : <AiOutlineAlignRight />}
+          </div>
         </div>
-        <div className="right">
+        <div
+          className={`right ${activeToggle ? `active-right` : ``}`}
+          id="right-block"
+        >
+          {/* --------- Menu Btn --------- */}
           <div className="menus">
             <ul>
               <li>
@@ -51,4 +73,4 @@ function topbar() {
   );
 }
 
-export default topbar;
+export default Topbar;
