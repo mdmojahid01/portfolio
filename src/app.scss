@@ -2,15 +2,16 @@
 
 .app {
   position: relative;
-  min-height: 100vh;
+  min-height: fit-content;
   width: 100%;
   background-color: $main-bgColor;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  // &:not(:first-child) {
-  //   position: relative;
-  //   top: 70px;
-  // }
+}
+@media screen and (max-width: 600px) {
+  .app {
+    min-height: fit-content;
+    height: fit-content;
+  }
 }

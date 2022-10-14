@@ -44,3 +44,38 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    height: fit-content !important;
+    padding: 10px;
+    @include flex-center(column);
+    flex-direction: column-reverse;
+
+    .left {
+      width: 100%;
+      @include flex-center(row);
+      font-size: small;
+      padding: 10px 20px;
+    }
+
+    .right {
+      @include flex-center(row);
+      width: 100%;
+      padding: 10px 20px;
+      font-size: small;
+      column-gap: 5px;
+      justify-content: center;
+
+      .number,
+      .email {
+        // a {
+
+        // }
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

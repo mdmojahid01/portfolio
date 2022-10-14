@@ -2,7 +2,6 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaReact } from "react-icons/fa";
-
 import "./footer.scss";
 
 //  Heart - &#128151;

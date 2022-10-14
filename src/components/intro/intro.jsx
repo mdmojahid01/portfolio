@@ -26,6 +26,9 @@ function intro() {
           </div>
           <div className="designation">
             <h1 className="name">Mohammad Mojahid</h1>
+            <h1 className="mediaName">
+              Hi, I'm Mohammad Mojahid.<span className="wave">👋</span>
+            </h1>
             <h2 className="desig">Software Engineer</h2>
           </div>
           <div className="social_handle">
