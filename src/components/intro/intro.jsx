@@ -103,7 +103,7 @@ function intro() {
               bootstrap4, JavaScript and React Js ). In future, I would like to
               work in MERN Stack Technology. I want to work for an organization
               where I can enhance my technical knowledge and get experience by
-              achieving the organization goal.
+              achieving the organization's goal.
             </p>
           </div>
           <div className="education">
