@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./topbar.scss";
-import resume from "../../images/resume/mojahid_cv.pdf";
 import { HiOutlineDownload } from "react-icons/hi";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
@@ -59,7 +58,10 @@ function Topbar() {
               </li>
               {/* adding download iconfor  my resume */}
               <li className="resume-btn">
-                <a href={resume} download="mojahid_cv.pdf">
+                <a
+                  href="https://drive.google.com/file/d/1x6Rzmmj4b6CdjZTGcE0uVsMYSVvw2_pJ/view?usp=share_link"
+                  target="blank"
+                >
                   <span> Resume</span>
                   <HiOutlineDownload style={{ fontSize: "16px" }} />
                 </a>

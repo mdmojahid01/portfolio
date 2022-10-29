@@ -57,7 +57,7 @@ function projects() {
               image={todo}
               projectName="To Do App"
               description="This is to do listing app developed using React js."
-              href="https://mdmojahid01.github.io/React-to-do-app/"
+              href="https://md-react-todo-app.netlify.app/"
               usedTech={todoUsedTech}
             />
           </div>

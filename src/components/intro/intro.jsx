@@ -100,10 +100,10 @@ function intro() {
               {" "}
               I have a great interest in Software Development🚀. Currently, I am
               working to enhance my Web Development Skills ( like HTML5, CSS3,
-              bootstrap4, JavaScript and React Js ). In future, I would like to
-              work in MERN Stack Technology. I want to work for an organization
-              where I can enhance my technical knowledge and get experience by
-              achieving the organization's goal.
+              bootstrap4, JavaScript and React Js ). In the future, I would like
+              to work in MERN Stack Technology. I want to work for an
+              organization where I can enhance my technical knowledge and get
+              experience by achieving the organization's goal.
             </p>
           </div>
           <div className="education">

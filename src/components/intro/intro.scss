@@ -95,6 +95,7 @@
         height: 40px;
         background-color: transparent;
         border-radius: 50%;
+        overflow: hidden;
         &:hover {
           background-color: $secondary-bgColor;
           color: $secondary-fontColor;
@@ -107,7 +108,6 @@
     @include flex-center(column);
     width: 60%;
     min-height: 100%;
-
     justify-content: flex-start;
     align-items: flex-start;
     color: $main-fontColor;
@@ -322,7 +322,13 @@
     }
   }
 }
-
+@media screen and (max-width: 600px) {
+  .introduction {
+    > p {
+      font-family: "Roboto", sans-serif !important;
+    }
+  }
+}
 @media screen and (max-width: 350px) {
   .introduction {
     > div {
