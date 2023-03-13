@@ -11,7 +11,7 @@ function experience() {
           <InnerContainer
             image={codermaniaa}
             companyName="Codermaniaa Labs Pvt Ltd"
-            experience="Jan 2022 - Sept 2022"
+            experience="Jan 2022 - June 2022"
             designation="Frontend developer"
             description="I worked on a project as a React JS Intern in this organization. Mostly my task was to develop UI screen in React JS using
 functional component feature."
