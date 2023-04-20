@@ -1,24 +1,22 @@
 // ------ TopBar Color ------------------
-$menus-fontHoverColor: #6c63ff;
+$menus-fontHoverColor: #147efb; //#6c63ff;
 
 // ----------- Main theme Colors ------------
 $main-bgColor: white;
-$secondary-bgColor: #2d2b3e;
+$secondary-bgColor: #2d2e32; //2d2b3e
 $main-fontColor: black;
 $secondary-fontColor: white;
 
 // ----------- Skills Section Colors ------------
-//$skill-bgColor: lightblue;
-//$skill-fontColor: #2d2b3e;
 
 // ------ Contact Section Colors -----------------
 $contact-bgColor: white;
-$contact-fontColor: #2d2b3e;
-$contact-bdrColor: #6c63ff;
+$contact-fontColor: #2d2e32;
+$contact-bdrColor: #147efb; //#6c63ff;
 $contact-bdrHoverColor: #191924;
 
 // -------- Footer Section Colors ---------------------
-$footer-bgColor: #2d2b3e;
+$footer-bgColor: #2d2e32;
 $footer-fontColor: white;
 // -------------------------------------------------------------------
 
@@ -34,14 +32,14 @@ $footer-fontColor: white;
 
   &::-webkit-scrollbar {
     scroll-behavior: smooth;
-    width: 10px;
+    width: 8px;
   }
   &::-webkit-scrollbar-track {
-    width: 14px;
+    width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    // border-radius: 15px;
-    background: $secondary-bgColor;
+    border-radius: 15px;
+    background: lightgray;
   }
   // ::-webkit-scrollbar-thumb:hover {
   //   background: rgb(154, 154, 35);

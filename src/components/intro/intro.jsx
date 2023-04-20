@@ -15,126 +15,74 @@ function intro() {
   return (
     <div className="first-div" id="intro">
       <Topbar></Topbar>
-
-      <div className="intro">
-        <div className="left">
-          <div className="image">
-            <img
-              src={process.env.PUBLIC_URL + "/images/my_image.jpeg"}
-              alt="profile_pic"
-            />
-          </div>
-          <div className="designation">
-            <h1 className="name">Mohammad Mojahid</h1>
-            <h1 className="mediaName">
-              Hi, I'm Mohammad Mojahid.<span className="wave">👋</span>
-            </h1>
-            <h2 className="desig">Software Engineer</h2>
-          </div>
-          <div className="social_handle">
-            <a
-              href="mailto:mojahidmd92@gmail.com"
-              target={"_blank"}
-              rel="noreferrer"
-              className="email"
-            >
-              <HiOutlineMail />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mdmojahid01/"
-              target={"_blank"}
-              className="linkedin"
-              rel="noreferrer"
-            >
-              <AiOutlineLinkedin />
-            </a>
-            <a
-              href="https://github.com/mdmojahid01"
-              target={"_blank"}
-              rel="noreferrer"
-              className="github"
-            >
-              <AiOutlineGithub />
-            </a>
-            <a
-              href="https://www.facebook.com/mdmojahid01/"
-              target={"_blank"}
-              rel="noreferrer"
-              className="facebook"
-            >
-              <AiOutlineFacebook />
-            </a>
-            <a
-              href="https://www.instagram.com/mdmojahid01/"
-              target={"_blank"}
-              rel="noreferrer"
-              className="instagram"
-            >
-              <AiOutlineInstagram />
-            </a>
-          </div>
-        </div>
-        <div className="right">
-          <div className="introduction">
-            <h1>
-              Hi, I'm Mohammad Mojahid.<span className="wave">👋</span>
-            </h1>
-            <br />
-            <div>
-              And I am
-              <Typewriter
-                options={{
-                  strings: [
-                    "Frontend Enthusiast.",
-                    "React Developer.",
-                    "JavaScript Developer.",
-                    "Team Person.",
-                    "Dedicated Programmer.",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+      <div className="first-div-container-center">
+        <div className="first-div-container">
+          <div className="intro">
+            <div className="left">
+              <div className="introduction">
+                <h1>
+                  Front-End React <br /> Developer.
+                  <span className="wave">👋</span>
+                </h1>
+                <p>
+                  Hi, I'm Mohammad Mojahid. A passionate Front-end React <br />
+                  Developer based in India.
+                </p>
+                <div className="social_handle">
+                  <a
+                    href="mailto:mojahidmd92@gmail.com"
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className="email"
+                  >
+                    <HiOutlineMail />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mdmojahid01/"
+                    target={"_blank"}
+                    className="linkedin"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineLinkedin />
+                  </a>
+                  <a
+                    href="https://github.com/mdmojahid01"
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className="github"
+                  >
+                    <AiOutlineGithub />
+                  </a>
+                </div>
+              </div>
             </div>
-            <p>
-              {" "}
-              I have a great interest in Software Development🚀. Currently, I am
-              working to enhance my Web Development Skills ( like HTML5, CSS3,
-              bootstrap4, JavaScript and React Js ). In the future, I would like
-              to work in MERN Stack Technology. I want to work for an
-              organization where I can enhance my technical knowledge and get
-              experience by achieving the organization's goal.
-            </p>
+            {/* ---------------------------------------------------------------- */}
+            <div className="right">
+              <div className="img-parent">
+                <div
+                  style={{
+                    backgroundImage: `url(${
+                      process.env.PUBLIC_URL + "/images/my_image.jpeg"
+                    })`,
+                  }}
+                  className="image"
+                ></div>
+              </div>
+            </div>{" "}
           </div>
+          {/* --------------------------------------------------------------- */}
           <div className="education">
-            <h1>Education</h1>
+            <p>highest qualification</p>
             <div className="edu-content">
               <div className="edu-div">
                 <IoSchoolSharp />
                 <div className="edu-name">
-                  <h3>B.tech (CSE) 2019-present</h3>
-                  <p>
-                    RAYAT INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY,
-                    PUNJAB
-                  </p>
-                </div>
-              </div>
-              <div className="edu-div">
-                <IoSchoolSharp />
-                <div className="edu-name">
-                  <h3>
-                    Higher Secondary Education (10+2)<sup>th</sup>
-                  </h3>
-                  <p>DR. JAGANNATH MISHRA COLLEGE, MUZAFFARPUR, BIHAR</p>
-                </div>
-              </div>{" "}
-              <div className="edu-div">
-                <IoSchoolSharp />
-                <div className="edu-name">
-                  <h3>
-                    Secondary Education (10)<sup>th</sup>
-                  </h3>
-                  <p>SHRI RAM SEVAK SAHU HIGH SCHOOL, SARFUDDINPUR </p>
+                  <h1>
+                    Bachelor degree in Computer Science Engineering{" "}
+                    <span className="dn">||</span>{" "}
+                    <br style={{ display: "none" }} id="break-year" />
+                    2019-2023
+                  </h1>
                 </div>
               </div>
             </div>
