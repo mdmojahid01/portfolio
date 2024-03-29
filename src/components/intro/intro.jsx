@@ -10,6 +10,7 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import { CONNECT_ME } from "../../constants";
 
 function intro() {
   return (
@@ -30,7 +31,7 @@ function intro() {
                 </p>
                 <div className="social_handle">
                   <a
-                    href="mailto:mojahidmd92@gmail.com"
+                    href={`mailto:${CONNECT_ME.EMAIL_ID}`}
                     target={"_blank"}
                     rel="noreferrer"
                     className="email"
@@ -38,7 +39,7 @@ function intro() {
                     <HiOutlineMail />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/mdmojahid01/"
+                    href={CONNECT_ME.LINKEDIN_PROFILE}
                     target={"_blank"}
                     className="linkedin"
                     rel="noreferrer"
@@ -46,7 +47,7 @@ function intro() {
                     <AiOutlineLinkedin />
                   </a>
                   <a
-                    href="https://github.com/mdmojahid01"
+                    href={CONNECT_ME.GITHUB_PROFILE}
                     target={"_blank"}
                     rel="noreferrer"
                     className="github"
@@ -62,7 +63,7 @@ function intro() {
                 <div
                   style={{
                     backgroundImage: `url(${
-                      process.env.PUBLIC_URL + "/images/my_image.jpeg"
+                      process.env.PUBLIC_URL + "/images/my_image.png"
                     })`,
                   }}
                   className="image"
@@ -79,9 +80,9 @@ function intro() {
                 <div className="edu-name">
                   <h1>
                     Bachelor degree in Computer Science Engineering{" "}
-                    <span className="dn">||</span>{" "}
+                    <span className="dn">|</span>{" "}
                     <br style={{ display: "none" }} id="break-year" />
-                    2019-2023
+                    (2019-2023)
                   </h1>
                 </div>
               </div>

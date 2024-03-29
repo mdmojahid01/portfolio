@@ -17,8 +17,8 @@ function App() {
     <div className="app">
       <ToastContainer autoClose={1000} pauseOnFocusLoss={false} />
       <Intro />
-      <Skills />
       <Experience />
+      <Skills />
       <Project />
       <Contact />
       <Footer />

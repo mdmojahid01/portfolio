@@ -1,30 +1,33 @@
 import React from "react";
 
-function innerContainer(props) {
+function innerContainer({
+  image,
+  companyName,
+  experience,
+  designation,
+  description,
+  responsibility,
+}) {
   return (
     <div className="innerExperience">
       <div className="companyLogodiv">
         <div className="logo">
-          <img src={props.image} alt="logo" />
+          <img src={image} alt="logo" />
         </div>
         <div className="companyName">
-          <h3>{props.companyName}</h3>
-          <p className="experienceInterval">{props.experience}</p>
+          <h3>{companyName}</h3>
+          <p className="experienceInterval">{experience}</p>
         </div>
       </div>
       {/* ----------- */}
       <div className="expDetails">
-        <h2>{props.designation}</h2>
-        <p>{props.description}</p>
-
+        <h2>{designation}</h2>
+        <p>{description}</p>
         <span>Responsibilites:</span>
-
         <ul>
-          <li>{props.bp1}</li>
-          <li>{props.bp2}</li>
-          <li>{props.bp3}</li>
-          <li>{props.bp4}</li>
-          <li>{props.bp5}</li>
+          {Object.values(responsibility).map((point) => {
+            return <li key={point}>{point}</li>;
+          })}
         </ul>
       </div>
     </div>

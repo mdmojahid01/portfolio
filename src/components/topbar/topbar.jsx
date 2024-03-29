@@ -3,7 +3,7 @@ import "./topbar.scss";
 import { HiOutlineDownload } from "react-icons/hi";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
-// import { act } from "@testing-library/react";
+import { CONNECT_ME } from "../../constants";
 
 function Topbar() {
   const [activeToggle, setActiveToggle] = useState(false);
@@ -58,11 +58,8 @@ function Topbar() {
               </li>
               {/* adding download iconfor  my resume */}
               <li className="resume-btn">
-                <a
-                  href="https://drive.google.com/file/d/1ONtuuQ0M119wvvynMj6vZJVAkFvGcTmB/view"
-                  target="blank"
-                >
-                  <span> Resume</span>
+                <a href={CONNECT_ME?.RESUME_LINK} target="blank">
+                  <span>Resume</span>
                   <HiOutlineDownload style={{ fontSize: "16px" }} />
                 </a>
               </li>

@@ -1,4 +1,5 @@
 @import "../../global.scss";
+
 // ----------------------
 .dots-container {
   display: flex;
@@ -52,6 +53,7 @@
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 }
+
 // ----------------------
 .contact {
   width: 100%;
@@ -59,7 +61,7 @@
   @include flex-center(column);
   justify-content: space-evenly;
   background-color: $contact-bgColor;
-  box-shadow: 0 0px 10px #e0e0e0;
+  // box-shadow: 0 0px 10px #e0e0e0;
 
   h1 {
     width: 100%;
@@ -69,12 +71,14 @@
     color: $contact-fontColor;
     @include flex-center(row);
   }
+
   .inner-contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+
     .left {
       width: 50%;
       height: 100%;
@@ -85,9 +89,11 @@
         height: 70%;
       }
     }
+
     .right {
       width: 50%;
       height: 100%;
+
       * {
         overflow-x: visible;
       }
@@ -103,10 +109,12 @@
   .messageContainer {
     height: 9rem;
   }
+
   .btnCon {
     @include flex-center(row);
     justify-content: flex-start;
     width: 65%;
+
     button {
       min-width: 120px;
       max-width: fit-content;
@@ -125,6 +133,7 @@
     }
   }
 }
+
 .inpContainer {
   position: relative;
   width: 65%;
@@ -134,6 +143,7 @@
     resize: none;
   }
 }
+
 .inputAdd {
   position: absolute;
   top: 0;
@@ -149,13 +159,16 @@
   padding: 1.25rem;
   background: white;
 }
+
 .inputAdd:hover {
   border-color: $contact-bdrHoverColor !important;
 }
+
 .inputAdd:focus {
-  border: 1px solid $contact-bdrHoverColor !important ;
+  border: 1px solid $contact-bdrHoverColor !important;
   box-shadow: 0 0 0 1px $contact-bdrHoverColor !important;
 }
+
 .label {
   position: absolute;
   left: 1rem;
@@ -168,7 +181,8 @@
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in !important;
   background-color: white;
 }
-.inputAdd:focus ~ .label {
+
+.inputAdd:focus~.label {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
@@ -176,7 +190,8 @@
   color: $contact-bdrHoverColor;
   background-color: $contact-bgColor;
 }
-.inputAdd:not(:placeholder-shown).inputAdd:not(:focus) ~ .label {
+
+.inputAdd:not(:placeholder-shown).inputAdd:not(:focus)~.label {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
@@ -184,22 +199,26 @@
   color: $contact-bdrColor;
   background-color: $contact-bgColor;
 }
+
 .inputAdd:not(:placeholder-shown) {
-  border: 1px solid $contact-bdrHoverColor !important ;
+  border: 1px solid $contact-bdrHoverColor !important;
   box-shadow: none !important;
   background-color: white;
 }
+
 // ============= Responsive design ===========
 @media screen and (max-width: 900px) {
   .contact {
     height: fit-content;
     box-shadow: none;
     padding: 110px 0px 20px;
+
     h1 {
       height: fit-content;
       font-size: 2.4rem;
       padding: 5px;
     }
+
     .inner-contact {
       flex-direction: column;
       width: 100%;
@@ -214,6 +233,7 @@
           height: 80%;
         }
       }
+
       .right {
         padding: 10px 0px;
         width: 100%;
@@ -231,6 +251,7 @@
       width: 80%;
     }
   }
+
   .inpContainer {
     position: relative;
     width: 80%;

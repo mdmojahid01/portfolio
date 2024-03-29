@@ -10,7 +10,7 @@ $secondary-fontColor: white;
 // ----------- Skills Section Colors ------------
 
 // ------ Contact Section Colors -----------------
-$contact-bgColor: white;
+$contact-bgColor: #f9f9f9;
 $contact-fontColor: #2d2e32;
 $contact-bdrColor: #147efb; //#6c63ff;
 $contact-bdrHoverColor: #191924;
@@ -26,6 +26,7 @@ $footer-fontColor: white;
   justify-content: center;
   align-items: center;
 }
+
 * {
   // scroll-snap-type: y mandatory;
   // scroll-snap-align: start;
@@ -34,22 +35,27 @@ $footer-fontColor: white;
     scroll-behavior: smooth;
     width: 8px;
   }
+
   &::-webkit-scrollbar-track {
     width: 8px;
   }
+
   &::-webkit-scrollbar-thumb {
     border-radius: 15px;
     background: lightgray;
   }
+
   // ::-webkit-scrollbar-thumb:hover {
   //   background: rgb(154, 154, 35);
   // }
 }
+
 h1 {
   font-size: 1.75em;
   font-weight: 500;
   padding: 10px 0px;
 }
+
 a {
   text-decoration: none;
   color: inherit;

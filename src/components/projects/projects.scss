@@ -1,36 +1,39 @@
 @import "../../global.scss";
+
 .projects {
   width: 100%;
   min-height: 100vh;
   padding-top: 70px;
-  box-shadow: 0 0 10px #e0e0e0;
+  // box-shadow: 0 0 10px #e0e0e0;
   @include flex-center(column);
   justify-content: space-evenly;
 
-  > h1 {
+  >h1 {
     width: 100%;
     height: 100px;
     text-align: center;
     font-size: 3.75rem;
     color: $secondary-bgColor;
   }
-  > div {
+
+  >div {
     width: 100%;
     height: 100%;
     padding: 20px 60px 80px;
     @include flex-center(column);
     gap: 20px;
 
-    > div {
+    >div {
       width: 100%;
       @include flex-center(row);
 
-      > div {
+      >div {
         flex: 1;
         height: 420px;
         overflow: hidden;
         @include flex-center(row);
         padding: 5px;
+
         a {
           display: block;
           cursor: pointer;
@@ -39,6 +42,7 @@
     }
   }
 }
+
 // =========== InnerProject Div ===============
 
 .innerProjectDiv {
@@ -54,6 +58,7 @@
     transform: scale(1.08, 1.08);
     box-shadow: 0px 0px 12px #cacaca;
   }
+
   .projectImage {
     width: 100%;
     height: 150px;
@@ -65,14 +70,16 @@
       object-fit: fill;
     }
   }
-  > h1 {
+
+  >h1 {
     font-size: larger;
     font-weight: 700;
     height: 55px;
     margin-bottom: 2px;
     padding: 20px 20px 10px;
   }
-  > p {
+
+  >p {
     height: 100px;
     color: gray;
     padding: 0px 20px 16px;
@@ -81,12 +88,14 @@
     overflow: scroll;
   }
 }
+
 .hrDiv {
   width: 100%;
   height: 2px;
   border-radius: 4px;
   background-color: gray;
 }
+
 .usedTechnology {
   height: 60px;
   display: flex;
@@ -96,7 +105,7 @@
   gap: 8px;
   padding: 8px 20px;
 
-  > div {
+  >div {
     width: 25px;
     height: 25px;
     padding: 2px;
@@ -106,6 +115,7 @@
     border-radius: 4px;
   }
 }
+
 // =========== Responsive design ========
 
 @media screen and (max-width: 900px) {
@@ -113,25 +123,28 @@
     min-height: fit-content;
     padding-top: 110px;
     box-shadow: none;
-    > h1 {
+
+    >h1 {
       height: fit-content;
       font-size: 2.4rem;
       padding: 5px;
     }
+
     // ==== row div1 ======
-    > div {
+    >div {
       width: 100%;
       height: 100%;
       padding: 20px 0px;
       @include flex-center(column);
       gap: 20px;
+
       // ======== inner row div ==========
-      > div {
+      >div {
         width: 100%;
         @include flex-center(column);
         flex-wrap: wrap;
 
-        > div {
+        >div {
           flex: none;
           width: 100%;
           // a {
@@ -141,6 +154,7 @@
       }
     }
   }
+
   // =========== InnerProject Div ===============
 
   .innerProjectDiv {
@@ -148,19 +162,22 @@
       transform: none;
       box-shadow: 0px 0px 12px #cecece;
     }
-   
-    > h1 {
+
+    >h1 {
       text-align: center;
     }
-    > p {
+
+    >p {
       text-align: center;
     }
   }
+
   .hrDiv {
     height: 1px;
   }
+
   .usedTechnology {
-    > div {
+    >div {
       font-size: 16px;
       overflow: hidden;
     }
