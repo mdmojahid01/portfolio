@@ -20,7 +20,7 @@ import {
 
 export const CONNECT_ME = {
   RESUME_LINK:
-    "https://drive.google.com/file/d/1-gUJy55S8DwSHYQaUKY8GumKez6yuP2S/view",
+    "https://drive.google.com/drive/folders/1E4OygPBfJXjN7P0yJiZWsg4gB8cgHu-K",
   LINKEDIN_PROFILE: "https://www.linkedin.com/in/mdmojahid01",
   GITHUB_PROFILE: "https://github.com/mdmojahid01",
   EMAIL_ID: "mojahidmd92@gmail.com",
